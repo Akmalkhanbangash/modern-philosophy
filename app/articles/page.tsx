@@ -1,29 +1,23 @@
-export default function Articles() {
+import Link from "next/link";
+import { articles } from "../data/articles";
+
+export default function ArticlesPage() {
   return (
-    <main className="min-h-screen bg-black text-white p-10">
+    <main className="mx-auto max-w-4xl px-6 py-20">
+      <h1 className="mb-8 text-4xl font-bold">Articles</h1>
 
-      <h1 className="text-4xl font-bold">Articles</h1>
-
-      <p className="mt-4 text-gray-300">
-        Explore ideas on modern philosophy, society, technology, and meaning.
-      </p>
-
-      <div className="mt-8 space-y-4">
-
-        <div className="border border-gray-700 p-4 rounded">
-          Why modern humans feel disconnected
-        </div>
-
-        <div className="border border-gray-700 p-4 rounded">
-          Technology vs Human Meaning
-        </div>
-
-        <div className="border border-gray-700 p-4 rounded">
-          AI and the future of thinking
-        </div>
-
+      <div className="space-y-4">
+        {articles.map((article) => (
+          <Link
+            key={article.slug}
+            href={`/articles/${article.slug}`}
+            className="block rounded-lg border p-6 hover:bg-gray-100"
+          >
+            <h2 className="text-2xl font-semibold">{article.title}</h2>
+            <p className="mt-2 text-gray-600">{article.description}</p>
+          </Link>
+        ))}
       </div>
-
     </main>
   );
 }
