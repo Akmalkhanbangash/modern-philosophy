@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { articles } from "../../data/articles";
+//import {relatedArticles} from "../../components/featuredArticles";
 
 type Props = {
   params: Promise<{
@@ -11,6 +12,11 @@ export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
 
   const article = articles.find((a) => a.slug === slug);
+  const relatedArticles = articles.filter(
+  (a) =>
+    a.slug !== article?.slug &&
+    a.category === article?.category
+);
 
   if (!article) {
     return (
@@ -28,20 +34,59 @@ export default async function ArticlePage({ params }: Props) {
     >
       ← Back to Articles
     </Link>
-      <h1 className="text-5xl font-bold">{article.title}</h1>
+      <div className="mb-8">
+  <span className="inline-block rounded-full bg-gray-100 px-4 py-1 text-sm font-medium text-gray-700">
+    {article.category}
+  </span>
 
-      <div className="mt-6 flex items-center gap-6 text-sm text-gray-500">
-  <span>By {article.author}</span>
-  <span>•</span>
-  <span>{article.readTime}</span>
+  <h1 className="mt-6 text-5xl font-bold leading-tight">
+    {article.title}
+  </h1>
+
+  <div className="mt-6 flex items-center gap-4 text-sm text-gray-500">
+    <span>By {article.author ?? "Modern Philosophy"}</span>
+    <span>•</span>
+    <span>{article.readTime}</span>
+  </div>
+
+  <p className="mt-8 text-xl leading-8 text-gray-700">
+    {article.description}
+  </p>
 </div>
-
-<p className="mt-4 text-xl leading-8 text-gray-700">
-  {article.description}
-</p>
      <article className="prose prose-lg mt-10 max-w-none">
   <p>{article.content}</p>
 </article>
+{relatedArticles.length > 0 && (
+  <section className="mt-16">
+    <h2 className="text-3xl font-bold">
+      Related Articles
+    </h2>
+
+    <div className="mt-8 space-y-4">
+      {relatedArticles.map((related) => (
+        <Link
+          key={related.id}
+          href={`/articles/${related.slug}`}
+          className="block rounded-xl border p-6 transition hover:shadow-md"
+        >
+          <h3 className="text-xl font-semibold">
+  {related.title}
+</h3>
+
+<div className="mt-2 flex items-center gap-4 text-sm text-gray-500">
+  <span>By {related.author ?? "Modern Philosophy"}</span>
+  <span>•</span>
+  <span>{related.readTime}</span>
+</div>
+
+<p className="mt-3 text-gray-600">
+  {related.description}
+</p>
+        </Link>
+      ))}
+    </div>
+  </section>
+)}
     </main>
   );
 }

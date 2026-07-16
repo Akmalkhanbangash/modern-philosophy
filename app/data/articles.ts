@@ -41,7 +41,7 @@ export const articles: Article[] = [
   description: "Ancient wisdom for dealing with stress and uncertainty today.",
   readTime: "6 min read",
   author: "Malik Akmal Khan",
-  category: "Stoicism",
+  category: "Philosophy",
   content:
     "Stoicism teaches us to focus on what we can control, accept what we cannot, and develop resilience in everyday life."
 }
