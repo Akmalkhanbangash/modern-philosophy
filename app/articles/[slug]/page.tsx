@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { articles } from "../../data/articles";
+import QuoteBlock from "../../components/QuoteBlock";
 //import {relatedArticles} from "../../components/featuredArticles";
 
 type Props = {
@@ -53,7 +54,13 @@ export default async function ArticlePage({ params }: Props) {
     {article.description}
   </p>
 </div>
-     <article className="prose prose-lg mt-10 max-w-none">
+{article.quote && article.quoteAuthor && (
+  <QuoteBlock
+    quote={article.quote}
+    author={article.quoteAuthor}
+  />
+)}
+     <article className="prose prose-lg mt-12 max-w-none leading-8 text-gray-800">
   <p>{article.content}</p>
 </article>
 {relatedArticles.length > 0 && (

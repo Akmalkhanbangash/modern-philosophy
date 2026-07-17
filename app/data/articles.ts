@@ -7,6 +7,8 @@ export type Article = {
   author: string;
   category: string;
   content: string;
+  quote?: string;
+quoteAuthor?: string;
 };
 
 export const articles: Article[] = [
@@ -18,6 +20,8 @@ export const articles: Article[] = [
   readTime: "5 min read",
   author: "Malik Akmal Khan",
   category: "Philosophy",
+  quote: "The unexamined life is not worth living.",
+quoteAuthor: "Socrates",
 
   content:
     "The search for meaning has inspired philosophers for thousands of years and continues to shape how we understand our purpose."
