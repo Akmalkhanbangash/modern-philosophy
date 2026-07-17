@@ -35,7 +35,11 @@
 - [ ] Comments
 - [ ] Newsletter
 - [ ] Community Discussions
+### Community Features
 
+- [ ] Suggest a Topic
+- [ ] Request an Article
+- [ ] Vote for requested topics
 ---
 
 ## Future Vision
@@ -57,6 +61,9 @@ Core Ideas
 - Goal Progress
 - Purpose-driven mornings
 - Weekly Reviews
+
+
+
 
 Status:
 
