@@ -35,17 +35,13 @@ export default function FeaturedTopics() {
             (article) => article.category === category
           ).length;
 
-          return (
-            <Link
-              key={category}
-              href={`/topics/${category?.toLowerCase()}`}
-            >
-              <TopicCard
-                title={category ?? "General"}
-                description={`${count} article${count > 1 ? "s" : ""}`}
-              />
-            </Link>
-          );
+         return (
+  <TopicCard
+    key={category}
+    title={category ?? "General"}
+    description={`${count} article${count > 1 ? "s" : ""}`}
+  />
+);
         })}
       </div>
     </section>
