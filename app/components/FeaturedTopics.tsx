@@ -9,13 +9,13 @@ export default function FeaturedTopics() {
 
   return (
     <section className="mx-auto max-w-7xl px-6 py-20">
-      <div className="flex items-end justify-between">
+      <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
     <div>
-      <h2 className="text-4xl font-bold">
+      <h2 className="text-4xl font-bold text-gray-900 transition-colors dark:text-white">
         Explore by Topic
       </h2>
 
-      <p className="mt-3 max-w-2xl text-gray-600">
+      <p className="mt-3 max-w-2xl text-gray-600 transition-colors dark:text-gray-200">
         Every great journey begins with a single idea.
         Choose a topic and start exploring.
       </p>
@@ -23,7 +23,7 @@ export default function FeaturedTopics() {
 
     <Link
       href="/topics"
-      className="text-blue-600 hover:underline"
+      className="font-medium text-blue-600 transition-colors hover:underline dark:text-blue-400"
     >
       View All →
     </Link>

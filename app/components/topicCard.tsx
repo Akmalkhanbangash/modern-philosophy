@@ -12,13 +12,16 @@ export default function TopicCard({
   return (
     <Link
       href={`/topics/${title.toLowerCase()}`}
-      className="block rounded-xl border p-6 transition hover:shadow-md hover:bg-gray-50"
+      className="block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900 dark:hover:bg-gray-800"
     >
-      <h2 className="text-xl font-semibold">{title}</h2>
+      <h2 className="text-xl font-semibold text-gray-900 transition-colors dark:text-white">{title}</h2>
 
-      <p className="mt-2 text-gray-600">
+      <p className="mt-2 text-gray-600 transition-colors dark:text-gray-300">
         {description}
       </p>
+      <p className="mt-4 text-sm font-medium text-blue-600 dark:text-blue-400">
+  Explore →
+</p>
     </Link>
   );
 }
