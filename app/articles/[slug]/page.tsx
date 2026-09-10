@@ -94,7 +94,18 @@ dark:text-gray-300
     dark:prose-p:text-gray-300
   "
 >
-  <p>{article.content}</p>
+  {article.content.map((block, index) =>
+  block.type === "heading" ? (
+    <h2
+  key={index}
+  className="mt-12 mb-5 text-3xl font-bold text-gray-900 dark:text-white"
+>
+  {block.text}
+</h2>
+  ) : (
+    <p key={index}>{block.text}</p>
+  )
+)}
 </article>
 <section className="mt-16 rounded-xl border border-gray-200 bg-white p-8 transition-colors dark:border-gray-800 dark:bg-gray-900">
   <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
