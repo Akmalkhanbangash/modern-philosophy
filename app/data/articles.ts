@@ -349,19 +349,244 @@ export const articles: Article[] = [
   quoteAuthor: "Modern Philosophy",
 },
  
-  {
+ {
   id: 3,
-  slug: "stoicism-in-modern-life",
-  title: "Stoicism in Modern Life",
-  description: "Ancient wisdom for dealing with stress and uncertainty today.",
-  readTime: "6 min read",
-  author: "Malik Akmal Khan",
-  category: "Philosophy",
- content: [
-  {
-    type: "paragraph",
-    text: "Stoicism teaches us to focus on what we can control, accept what we cannot, and develop resilience in everyday life."
-  }
-]
+  slug: "why-are-we-always-in-a-hurry",
+  title: "Why Are We Always in a Hurry?",
+  description:
+    "We spend so much time thinking about yesterday and tomorrow that we sometimes forget to experience the day we are actually living.",
+  readTime: "4 min",
+  author: "Modern Philosophy",
+  category: "Modern Life",
+  content: [
+    {
+      type: "paragraph",
+      text: "There is something strange about the way we live today. We are always going somewhere. We hurry to work, hurry home, hurry through breakfast, and sometimes even hurry through conversations. And yet, even when nothing is chasing us, we still feel that we are late.",
+    },
+    {
+      type: "heading",
+      text: "Where Are We Rushing To?",
+    },
+    {
+      type: "paragraph",
+      text: "I once heard something from the generations before us: the good time has already passed, or the good time is still coming. Perhaps that is why we struggle to enjoy the present. We remember the days when life felt better, or we imagine that happiness is waiting somewhere ahead.",
+    },
+    {
+      type: "paragraph",
+      text: "The past becomes a place we miss. The future becomes a place we hope for. And somewhere between the two, we forget to live. But the present is the only part of life that is actually happening.",
+    },
+    {
+      type: "heading",
+      text: "The Day That Never Seems to Have Enough Time",
+    },
+    {
+      type: "paragraph",
+      text: "We often say, \"I don't have time.\" But sometimes the problem isn't that we have no time. Maybe we have forgotten how to be inside it.",
+    },
+    {
+      type: "paragraph",
+      text: "We eat while watching something. We walk while looking at our phones. We sit with people while thinking about messages from other people. We have more tools than ever to save time, yet somehow we are always busy.",
+    },
+    {
+      type: "heading",
+      text: "When Technology Becomes the Company We Keep",
+    },
+    {
+      type: "paragraph",
+      text: "Technology has given us incredible ways to make life easier. AI can write, machines can calculate, and messages can travel across the world in seconds. But there is a strange question underneath all of this: what are we doing with the time we save?",
+    },
+    {
+      type: "paragraph",
+      text: "Do we spend that time talking to someone we love? Taking a walk? Sitting quietly? Or do we simply fill the extra time with another screen?",
+    },
+    {
+      type: "paragraph",
+      text: "In an era of increasingly intelligent tools, perhaps we need to remember another kind of intelligence: emotional intelligence. Knowing when someone needs advice and when they simply need to be heard. Knowing when a friend is smiling but isn't really okay. Knowing when to speak, and when to stay silent.",
+    },
+    {
+      type: "heading",
+      text: "Maybe Slow Is Not the Same as Stopping",
+    },
+    {
+      type: "paragraph",
+      text: "We sometimes think slowing down means falling behind. But life doesn't always work that way.",
+    },
+    {
+      type: "paragraph",
+      text: "An hour spent with someone you love can disappear almost unnoticed. Yet ten minutes in a difficult situation can feel endless. The clock may move at the same speed, but our experience of time changes.",
+    },
+    {
+      type: "paragraph",
+      text: "Perhaps this is why we should stop measuring our lives only by minutes, hours, achievements, and deadlines. A day isn't valuable simply because we filled every minute of it.",
+    },
+    {
+      type: "heading",
+      text: "Learning to Be Where You Are",
+    },
+    {
+      type: "paragraph",
+      text: "Maybe we don't need to completely change our lives. Maybe we just need to stop running through them.",
+    },
+    {
+      type: "paragraph",
+      text: "Enjoy today's version of your life. Not the perfect version. Not the version you imagine five years from now. This version.",
+    },
+    {
+      type: "paragraph",
+      text: "If life is difficult today, it doesn't mean you cannot find one good moment inside the difficulty. If life is going well, don't rush past it while waiting for something even better.",
+    },
+    {
+      type: "paragraph",
+      text: "So talk to someone instead of sending another message. Put the phone down sometimes. Sit with your family. Take the longer walk. Drink your tea while it is still warm. Listen when someone is speaking. Let an ordinary day be ordinary.",
+    },
+    {
+      type: "paragraph",
+      text: "We don't have to live only once. We live every day. And perhaps the strange thing about life is that we only have to die once.",
+    },
+    {
+      type: "paragraph",
+      text: "So maybe the question isn't, \"How do I make my life move faster?\" Maybe it is, \"How do I become better at being here?\"",
+    },
+    {
+      type: "paragraph",
+      text: "Not yesterday. Not someday. Here. Today.",
+    },
+  ],
+  quote:
+    "We don't have to live only once. We live every day. We have to die only once.",
+  quoteAuthor: "Modern Philosophy",
+},
+{
+  id: 4,
+  slug: "the-beauty-of-an-ordinary-day",
+  title: "The Beauty of an Ordinary Day",
+  description:
+    "Not every day needs to be extraordinary. Sometimes the most meaningful moments are the ones we almost overlook.",
+  readTime: "4 min",
+  author: "Modern Philosophy",
+  category: "Life & Reflection",
+  content: [
+    {
+      type: "paragraph",
+      text: "We often imagine that a good life should be filled with memorable moments. A beautiful journey. A great achievement. A perfect evening. Something worth photographing, sharing, or remembering."
+    },
+    {
+      type: "paragraph",
+      text: "But most of life doesn't happen that way. Most days are ordinary. We wake up, have breakfast, go to work, answer messages, talk to our families, drink tea, finish a few things, and eventually go to sleep."
+    },
+    {
+      type: "paragraph",
+      text: "And perhaps that is not a problem at all."
+    },
+
+    {
+      type: "heading",
+      text: "The Days We Don't Notice"
+    },
+    {
+      type: "paragraph",
+      text: "Think about the last ordinary day you had. Nothing particularly exciting happened. There was no major celebration or dramatic change. Yet somewhere in that day, there may have been a small moment that felt good."
+    },
+    {
+      type: "paragraph",
+      text: "A conversation with someone you love. A cup of tea when you finally had a quiet moment. The sound of rain outside the window. A child's laugh from another room. Walking home while the evening slowly became dark."
+    },
+    {
+      type: "paragraph",
+      text: "These moments rarely announce themselves as important. We usually recognize their value much later, when we realize that these ordinary days were actually our life."
+    },
+
+    {
+      type: "heading",
+      text: "Why Do We Wait for Something Special?"
+    },
+    {
+      type: "paragraph",
+      text: "Perhaps we have become too good at waiting. We wait for the weekend. Then we wait for the holidays. We wait for the next promotion, the next trip, the next achievement, the next big change."
+    },
+    {
+      type: "paragraph",
+      text: "There is nothing wrong with looking forward to something. Hope gives direction to our lives. But if we are always waiting for the next thing, we may slowly forget to experience the thing that is already here."
+    },
+    {
+      type: "paragraph",
+      text: "A beautiful life is not necessarily a life where something extraordinary happens every day. It can be a life where ordinary moments are noticed."
+    },
+
+    {
+      type: "heading",
+      text: "The People Around Us"
+    },
+    {
+      type: "paragraph",
+      text: "The ordinary day becomes different when we pay attention to the people inside it."
+    },
+    {
+      type: "paragraph",
+      text: "We can become so familiar with the people we love that we stop noticing them. The same voice. The same jokes. The same questions. The same person sitting beside us."
+    },
+    {
+      type: "paragraph",
+      text: "But familiarity does not make someone less valuable. Sometimes it is the opposite. The people who appear in our ordinary days are often the ones who quietly make those days worth living."
+    },
+
+    {
+      type: "heading",
+      text: "Nothing Extraordinary Is Required"
+    },
+    {
+      type: "paragraph",
+      text: "You don't need a perfect morning to have a good day. You don't need an impressive achievement to feel that your day mattered."
+    },
+    {
+      type: "paragraph",
+      text: "Sometimes doing your work honestly, helping someone, sharing a meal, listening carefully, taking a walk, or simply sitting quietly for a few minutes is enough."
+    },
+    {
+      type: "paragraph",
+      text: "The value of a moment does not always come from how unusual it is. Sometimes it comes from the attention we give it."
+    },
+
+    {
+      type: "heading",
+      text: "Maybe This Is What Life Looks Like"
+    },
+    {
+      type: "paragraph",
+      text: "We sometimes divide life into important days and ordinary days, as if only the important ones count."
+    },
+    {
+      type: "paragraph",
+      text: "But when we look back years later, the picture may be very different. The birthday, the wedding, the promotion, and the journey may stand out. But between them were hundreds of quiet mornings, family dinners, conversations, walks, cups of tea, and evenings at home."
+    },
+    {
+      type: "paragraph",
+      text: "Those ordinary days were not the space between the important moments. They were the life itself."
+    },
+
+    {
+      type: "heading",
+      text: "One Ordinary Day"
+    },
+    {
+      type: "paragraph",
+      text: "So perhaps today does not need to become extraordinary."
+    },
+    {
+      type: "paragraph",
+      text: "Perhaps you can simply notice it."
+    },
+    {
+      type: "paragraph",
+      text: "Notice the person sitting beside you. Notice the food you are eating. Notice the weather outside. Notice the few minutes when nobody is asking anything from you. Notice the small things that usually pass without a second thought."
+    },
+    {
+      type: "paragraph",
+      text: "Because one day, we may look back and realize that an ordinary Tuesday was not ordinary at all."
+    }
+  ], 
+  quote:
+  "The ordinary days are not the days between the important moments. They are the life itself.",
+quoteAuthor: "Modern Philosophy",
 }
 ];
